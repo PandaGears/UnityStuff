@@ -8,10 +8,9 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour {
 
 	public static GameManager gm;
-    //store gameObject reference
+
     public GameObject Env;
 
-    bool ismenu = false;
         
     public List<GameObject> placableObjects = new List<GameObject>();
 
