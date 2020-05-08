@@ -271,7 +271,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 25b3155cc45c8b14ab69f2f656d83b5e, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
-    m_Alignment: 0
+    m_Alignment: 4
     m_WordWrap: 1
     m_RichText: 1
     m_TextClipping: 1
@@ -280,7 +280,7 @@ MonoBehaviour:
     m_FixedWidth: 0
     m_FixedHeight: 0
     m_StretchWidth: 1
-    m_StretchHeight: 0
+    m_StretchHeight: 1
   m_textField:
     m_Name: textfield
     m_Normal:

@@ -14,12 +14,6 @@ public class GameManager : MonoBehaviour {
         
     public List<GameObject> placableObjects = new List<GameObject>();
 
-    private void Update()
-    {
-        
-        
-    }
-
     void Awake () {
 		if (gm == null)
 			gm = this;

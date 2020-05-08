@@ -20,8 +20,9 @@ public class ObjectManager : MonoBehaviour {
         if (Input.GetMouseButtonDown(0))
         {
             RaycastHit hitInfo = new RaycastHit();
-            if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hitInfo) && hitInfo.transform.tag == "Object")
+            if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hitInfo))
             {
+                if(hitInfo.transform.tag == "Object")
                 selected = true;
             }
             else {
@@ -32,12 +33,12 @@ public class ObjectManager : MonoBehaviour {
 
 	void Update () {
         selectObject();
-		if (selected)
+		if (selected == true)
 		{
 			axis.canDraw = true;
 			if (Input.GetKey(KeyCode.LeftControl))
 				RotateObject();
-			else if (Input.GetKey(KeyCode.Mouse0))
+			if (Input.GetKey(KeyCode.LeftAlt))
 				TranslateObject();
 			if (Input.GetKeyDown(KeyCode.Delete))
 				Destroy(gameObject);
@@ -60,9 +61,15 @@ public class ObjectManager : MonoBehaviour {
 
 	void TranslateObject()
 	{
-		Vector3 temp = Input.mousePosition;
-		temp.z = 7.2f;
-		transform.position = Camera.main.ScreenToWorldPoint(temp);
-	}
+        if (Input.GetKey(KeyCode.Mouse0))
+        {
+            float dist = transform.position.z - Camera.main.transform.position.z;
+            Vector3 pos = Input.mousePosition;
+            pos.z = dist;
+            pos = Camera.main.ScreenToWorldPoint(pos);
+            pos.y = transform.position.y;
+            transform.position = pos;
+        }
+    }
 
 }
