@@ -7,7 +7,10 @@ public class Navigation : MonoBehaviour
     {
         SceneManager.LoadScene("Main Scene");
     }
-
+    public void MenuScene()
+    {
+        SceneManager.LoadScene("Menu Scene");
+    }
     public void Quit()
     {
         Application.Quit();
