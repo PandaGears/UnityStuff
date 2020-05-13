@@ -42,7 +42,7 @@ public class MenuManager : MonoBehaviour {
     {
         foreach (var menu in toggleMenus)
         {
-            if (menu.transform.tag == "BuildMenu" || menu.transform.tag == "AnimateMenu")
+            if (menu.transform.tag == "BuildMenu")
             {
                 foreach (Transform child in menu.transform)
                 {

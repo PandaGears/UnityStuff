@@ -1,11 +1,8 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using System;//for Type class
+using System;
 using System.Reflection;
-
-using System.Linq;
-
 
 public class SaveLoadMenu : MonoBehaviour {
 

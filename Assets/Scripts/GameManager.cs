@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Linq;
+﻿using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
@@ -18,22 +17,14 @@ public class GameManager : MonoBehaviour {
 		if (gm == null)
 			gm = this;
 
-		var objectArray = Resources.LoadAll("", typeof(GameObject));
-		foreach (Object item in objectArray)
-		{
-			placableObjects.Add((GameObject)item);
-		}
-	}
-
-    public void ToMenu()
-    {
-        SceneManager.LoadScene("Main Menu");
+        /* use linq to neaten this
+         */
+            var objectArray = Resources.LoadAll("", typeof(GameObject));
+           foreach (Object item in objectArray)
+           {
+               placableObjects.Add((GameObject)item);
+           }
+  
     }
-
-    public void ToMain()
-    {
-        SceneManager.LoadScene("Main Scene");
-    }
-
 
 }
