@@ -7,13 +7,13 @@ public class ColourPicker : MonoBehaviour
 
     public Material[] BodyColorMat;
     Material CurrMat;
-    Renderer renderer;
+    Renderer renders;
     
     // Use this for initialization
     void Start()
     {
 
-        renderer = this.GetComponent<Renderer>();
+        renders = this.GetComponent<Renderer>();
 
     }
 
@@ -26,23 +26,23 @@ public class ColourPicker : MonoBehaviour
     //render red color
     public void RedColor()
     {
-        renderer.material = BodyColorMat[0];
-        CurrMat = renderer.material;
+        renders.material = BodyColorMat[0];
+        CurrMat = renders.material;
         Debug.Log("RED");
     }
 
     //render greencolor
     public void GreenColor()
     {
-        renderer.material = BodyColorMat[1];
-        CurrMat = renderer.material;
+        renders.material = BodyColorMat[1];
+        CurrMat = renders.material;
         Debug.Log("GREEN");
     }
     //render blue color
     public void BlueColor()
     {
-        renderer.material = BodyColorMat[2];
-        CurrMat = renderer.material;
+        renders.material = BodyColorMat[2];
+        CurrMat = renders.material;
         Debug.Log("BLUE");
     }
 }

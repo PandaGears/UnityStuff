@@ -2,46 +2,56 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class ObjectManager : MonoBehaviour {
 
-	private bool selected;
-	public float moveSpeed = 0.5f;
 	public float rotationSpeed = 10f;
-
-	DrawAxis axis;
+    public float speed = 1.5f;
+    public static GameObject controlledUnit = null;
+    DrawAxis axis;
 	Material lineMaterial;
+    RaycastHit hit;
 
 	void Start () {
 		axis = GetComponent<DrawAxis>();
 	}
 
 
-    void selectObject() {
-        if (Input.GetMouseButtonDown(0))
+    void selectObject()
+    {
+        if(Input.GetMouseButtonDown(0))
         {
-            RaycastHit hitInfo = new RaycastHit();
-            if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hitInfo))
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            BoxCollider bcol = hit.collider as BoxCollider;
+            if (Physics.Raycast(ray, out hit))
             {
-                if(hitInfo.transform.tag == "Object")
-                selected = true;
-            }
-            else {
-                selected = false;
+                if (bcol != null)
+                {
+                    if (hit.transform.gameObject.tag == "Object")
+                    {
+                        controlledUnit = hit.transform.gameObject;
+                        Debug.Log(controlledUnit.name);
+                    }
+                }
+                else
+                {
+                    controlledUnit = null;
+                }
             }
         }
     }
 
 	void Update () {
         selectObject();
-		if (selected == true)
+		if (controlledUnit != null)
 		{
 			axis.canDraw = true;
 			if (Input.GetKey(KeyCode.LeftControl))
-				RotateObject();
+				RotateObject(controlledUnit);
 			if (Input.GetKey(KeyCode.LeftAlt))
-				TranslateObject();
+				TranslateObject(controlledUnit);
 			if (Input.GetKeyDown(KeyCode.Delete))
-				Destroy(gameObject);
+				Destroy(controlledUnit);
 		}
 		else
 		{
@@ -49,27 +59,39 @@ public class ObjectManager : MonoBehaviour {
 		}
 	}
 
-	void RotateObject()
+	void RotateObject(GameObject ctrlunit)
 	{
     if (Input.GetKey(KeyCode.LeftControl) && Input.GetAxis("Mouse ScrollWheel") > 0) {
-    transform.Rotate(Vector3.up * 0.5f, Space.Self);
+        ctrlunit.transform.Rotate(Vector3.up * 0.5f, Space.Self);
     }
     if (Input.GetKey(KeyCode.LeftControl) && Input.GetAxis("Mouse ScrollWheel") < 0) {
-    transform.Rotate(Vector3.down * 0.5f, Space.Self);
+        ctrlunit.transform.Rotate(Vector3.down * 0.5f, Space.Self);
 }
 	}
 
-	void TranslateObject()
+	void TranslateObject(GameObject ctrlunit)
 	{
-        if (Input.GetKey(KeyCode.Mouse0))
+        Vector3 pos = ctrlunit.transform.position;
+
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
-            float dist = transform.position.z - Camera.main.transform.position.z;
-            Vector3 pos = Input.mousePosition;
-            pos.z = dist;
-            pos = Camera.main.ScreenToWorldPoint(pos);
-            pos.y = transform.position.y;
-            transform.position = pos;
+            pos.x -= speed * Time.deltaTime;
         }
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            pos.x += speed * Time.deltaTime;
+        }
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            pos.z += speed * Time.deltaTime;
+        }
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            pos.z -= speed * Time.deltaTime;
+        }
+
+
+        ctrlunit.transform.position = pos;
     }
 
 }

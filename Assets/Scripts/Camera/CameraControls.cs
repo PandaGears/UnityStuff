@@ -11,7 +11,7 @@ public class CameraControls : MonoBehaviour {
     public GameObject thirdPersonplayer;
     public GameObject firstPersonplayer;
 
-  /*  public void SetToFirstPerson(){
+    public void SetToFirstPerson(){
         firstPersonCam.enabled = true;
         firstPersonplayer.SetActive(true);
         thirdPersonCam.enabled = false;
@@ -45,55 +45,30 @@ public class CameraControls : MonoBehaviour {
         thirdPersonplayer.SetActive(false);
         birdPersonCam.enabled = false;
         NoPersonCam.enabled = true;
-    }*/
+    }
 
     private void Start()
     {
-        firstPersonCam.enabled = false;
-        firstPersonplayer.SetActive(false);
-        thirdPersonCam.enabled = false;
-        thirdPersonplayer.SetActive(false);
-        birdPersonCam.enabled = true;
-        NoPersonCam.enabled = false;
+        SetToBirdPerson();
     }
 
     void ToggleView()
     {
         if (birdPersonCam.enabled = true && Input.GetKeyDown(KeyCode.V))
         {
-            firstPersonCam.enabled = true;
-            firstPersonplayer.SetActive(true);
-            thirdPersonCam.enabled = false;
-            thirdPersonplayer.SetActive(false);
-            birdPersonCam.enabled = false;
-            NoPersonCam.enabled = false;
+            SetToFirstPerson();
         }
-        else if (firstPersonCam.enabled = true && Input.GetKey(KeyCode.V))
+        else if (firstPersonCam.enabled = true && Input.GetKeyDown(KeyCode.V))
         {
-            firstPersonCam.enabled = false;
-            firstPersonplayer.SetActive(false);
-            thirdPersonCam.enabled = true;
-            thirdPersonplayer.SetActive(true);
-            birdPersonCam.enabled = false;
-            NoPersonCam.enabled = false;
+            SetToThirdPerson();
         }
-        else if (thirdPersonCam.enabled = true && Input.GetKey(KeyCode.V))
+        else if (thirdPersonCam.enabled = true && Input.GetKeyDown(KeyCode.V))
         {
-            firstPersonCam.enabled = false;
-            firstPersonplayer.SetActive(false);
-            thirdPersonCam.enabled = false;
-            thirdPersonplayer.SetActive(false);
-            birdPersonCam.enabled = false;
-            NoPersonCam.enabled = true;
+            SetToNoPerson();
         }
-        else if (NoPersonCam.enabled = true && Input.GetKey(KeyCode.V))
+        else if (NoPersonCam.enabled = true && Input.GetKeyDown(KeyCode.V))
         {
-            firstPersonCam.enabled = false;
-            firstPersonplayer.SetActive(false);
-            thirdPersonCam.enabled = false;
-            thirdPersonplayer.SetActive(false);
-            birdPersonCam.enabled = true;
-            NoPersonCam.enabled = false;
+            SetToBirdPerson();
         }
     }
 }
