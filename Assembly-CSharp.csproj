@@ -67,6 +67,12 @@
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Menu\MenuManager.cs" />
     <Compile Include="Assets\Scripts\Music\Sounds.cs" />
+    <Compile Include="Assets\Scripts\NPC\CharBrain.cs" />
+    <Compile Include="Assets\Scripts\NPC\ControlSwap.cs" />
+    <Compile Include="Assets\Scripts\NPC\ControlledBrain.cs" />
+    <Compile Include="Assets\Scripts\NPC\NPCBase.cs" />
+    <Compile Include="Assets\Scripts\NPC\NPCBoxShipper.cs" />
+    <Compile Include="Assets\Scripts\NPC\NPCBrain.cs" />
     <Compile Include="Assets\Scripts\Navigation\Loady.cs" />
     <Compile Include="Assets\Scripts\Navigation\Navigation.cs" />
     <Compile Include="Assets\Scripts\Navigation\Tips.cs" />
