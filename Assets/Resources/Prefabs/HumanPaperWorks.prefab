@@ -1141,12 +1141,14 @@ GameObject:
   m_Component:
   - component: {fileID: 8978118354589211451}
   - component: {fileID: 1302293264008803905}
-  - component: {fileID: 5387420933740996906}
-  - component: {fileID: 8581791521029001415}
   - component: {fileID: 1786078443563409797}
   - component: {fileID: 4988692255839415834}
   - component: {fileID: 3104840197635027638}
   - component: {fileID: 3104840197635027633}
+  - component: {fileID: 6554755852535462342}
+  - component: {fileID: -5630264426038292254}
+  - component: {fileID: 7028600993473831252}
+  - component: {fileID: -1055661405346206216}
   m_Layer: 0
   m_Name: HumanPaperWorks
   m_TagString: Untagged
@@ -1180,7 +1182,7 @@ Animator:
   m_GameObject: {fileID: 5387420933740996904}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: ee8ee677348fdf24298c4fb2b6b9ad94, type: 3}
-  m_Controller: {fileID: 9100000, guid: 040aa097dee9eeb4daed2ef6e5cd8717, type: 2}
+  m_Controller: {fileID: 9100000, guid: ef0c010cc34da4242bb52fbaabaa875b, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -1189,43 +1191,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!195 &5387420933740996906
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5387420933740996904}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 12
-  m_Acceleration: 1
-  avoidancePriority: 50
-  m_AngularSpeed: 50
-  m_StoppingDistance: 1
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 0
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
---- !u!114 &8581791521029001415
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5387420933740996904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e95a185bdaa181649b6fab235416bf43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boxCarry: {fileID: 3262377232264806210}
-  isCarry: 0
-  has_box: 0
 --- !u!143 &1786078443563409797
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1313,6 +1278,74 @@ CapsuleCollider:
   m_Height: 2.4875813
   m_Direction: 1
   m_Center: {x: 0, y: 0.7437906, z: 0}
+--- !u!114 &6554755852535462342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5387420933740996904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7cf2d4acf973b04b91f37ce9f77e68e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 7340414023797541750, guid: e30402f4ddc66654a837f5cb3936b66e, type: 3}
+  Docs: {fileID: 0}
+  waypoints:
+  - {fileID: 1798912032739730, guid: 251e74bc6145347d38eeafce62f28fa5, type: 3}
+  - {fileID: 1564554143529892, guid: 7857fc2e7c9ae45fdb3be9311ff9fbee, type: 3}
+  - {fileID: 1837104705616006, guid: a6f5c0c912fc14d6fb217df63b1afc15, type: 3}
+--- !u!195 &-5630264426038292254
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5387420933740996904}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &7028600993473831252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5387420933740996904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e74f1a2110701140bb6951e8d250fe0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data:
+    name: 
+    pos: {x: 0, y: 0, z: 0}
+  names: HumanPaperWorks
+--- !u!114 &-1055661405346206216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5387420933740996904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f0fd179f678ee342b264f0f3a338549, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5400121874930260124
 GameObject:
   m_ObjectHideFlags: 0
@@ -2410,12 +2443,6 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: -3268132840653566829, guid: f604aeb833e344dc784acb5d1ebe72f2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f604aeb833e344dc784acb5d1ebe72f2, type: 3}
---- !u!1 &3262377232264806210 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1337003448471876, guid: f604aeb833e344dc784acb5d1ebe72f2,
-    type: 3}
-  m_PrefabInstance: {fileID: 3261438673319308806}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3263987992790935724 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4212197749851818, guid: f604aeb833e344dc784acb5d1ebe72f2,
