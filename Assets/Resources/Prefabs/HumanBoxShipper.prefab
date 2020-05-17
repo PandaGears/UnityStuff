@@ -1295,7 +1295,7 @@ MonoBehaviour:
   boxPrep: {fileID: 8613146156687204529}
   waypoints:
   - {fileID: 1897072000236682, guid: efd754caf57ac422f969bc47572deffb, type: 3}
-  - {fileID: 1248929708510208, guid: d1b0a8c746f364f2080eaa76383bc0cc, type: 3}
+  - {fileID: 8573322496070043396, guid: f711648c0d8d3fe48a506c20db03f936, type: 3}
 --- !u!195 &-5808944123286879971
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1346,7 +1346,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f0fd179f678ee342b264f0f3a338549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 1302293264008803905}
 --- !u!1 &5400121874930260124
 GameObject:
   m_ObjectHideFlags: 0

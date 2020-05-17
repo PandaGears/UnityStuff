@@ -8,6 +8,8 @@ TagManager:
   - BuildMenu
   - ParentButton
   - AnimateMenu
+  - DontDestroy
+  - box
   layers:
   - Default
   - TransparentFX

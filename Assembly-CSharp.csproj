@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\Navigation\Loady.cs" />
     <Compile Include="Assets\Scripts\Navigation\Navigation.cs" />
     <Compile Include="Assets\Scripts\Navigation\Tips.cs" />
+    <Compile Include="Assets\Scripts\Obj Manipulation\BoxAppears.cs" />
     <Compile Include="Assets\Scripts\Obj Manipulation\ColourPicker.cs" />
     <Compile Include="Assets\Scripts\Obj Manipulation\DrawAxis.cs" />
     <Compile Include="Assets\Scripts\Obj Manipulation\ObjectManager.cs" />

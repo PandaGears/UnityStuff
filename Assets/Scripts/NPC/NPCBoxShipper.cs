@@ -55,7 +55,7 @@ public class NPCBoxShipper : MonoBehaviour
     private void Awake()
     {
         waypoints[0] = GameObject.Find("Packaging Table");
-        waypoints[1] = GameObject.Find("Pallet");
+        waypoints[1] = GameObject.Find("Boxed Pallet");
     }
 
     void Update()
