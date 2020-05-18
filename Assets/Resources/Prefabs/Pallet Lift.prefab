@@ -91,7 +91,6 @@ GameObject:
   - component: {fileID: 114979942447523244}
   - component: {fileID: 114204803345252080}
   - component: {fileID: 1427721661962819329}
-  - component: {fileID: 6842070837416379879}
   - component: {fileID: 1353417492011380232}
   - component: {fileID: -8088158937483066106}
   m_Layer: 0
@@ -156,28 +155,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.1286272, y: 2.307685, z: 2.2463257}
   m_Center: {x: -0.2945996, y: 1.0339899, z: -0.8846384}
---- !u!114 &6842070837416379879
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1035867983043208}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8a7851381d448744bb21022200eb90e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GuiOn: 0
-  Text: More Lifters, fun times
-  BoxSize:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 200
-    height: 100
-  customSkin: {fileID: 11400000, guid: 09e3d11f450a0dd44882e48b23f44245, type: 2}
-  Inputfield: {fileID: 0}
 --- !u!54 &1353417492011380232
 Rigidbody:
   m_ObjectHideFlags: 0

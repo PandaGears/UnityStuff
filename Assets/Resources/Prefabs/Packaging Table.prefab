@@ -3043,7 +3043,6 @@ GameObject:
   - component: {fileID: 114061679911931642}
   - component: {fileID: 114981061933595802}
   - component: {fileID: 5134051793643204355}
-  - component: {fileID: 1637630211038467662}
   - component: {fileID: -7665828539952912923}
   - component: {fileID: -361219066581477803}
   m_Layer: 0
@@ -3108,28 +3107,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.5940069, y: 2.1613522, z: 2.895328}
   m_Center: {x: -0.29700357, y: 1.0177698, z: -0.947664}
---- !u!114 &1637630211038467662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1897072000236682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8a7851381d448744bb21022200eb90e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GuiOn: 0
-  Text: That kinda table that Santas Elf slaves use... DON'T PRETEND THAT I AM WRONG
-  BoxSize:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 200
-    height: 100
-  customSkin: {fileID: 11400000, guid: 09e3d11f450a0dd44882e48b23f44245, type: 2}
-  Inputfield: {fileID: 0}
 --- !u!54 &-7665828539952912923
 Rigidbody:
   m_ObjectHideFlags: 0

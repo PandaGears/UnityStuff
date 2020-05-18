@@ -88,6 +88,7 @@ public class NPCPaperWorks : MonoBehaviour
                     }
                     else if (currentWay == 2)
                     {
+                        Docs.SetActive(true);
                         NPCAnim.SetBool("isRunning", false);
                         NPCAnim.SetBool("isIdle", false);
                         NPCAnim.SetBool("isTalking", false);
@@ -95,6 +96,7 @@ public class NPCPaperWorks : MonoBehaviour
                     }
                     else
                     {
+                        Docs.SetActive(false);
                         NPCAnim.SetBool("isRunning", false);
                         NPCAnim.SetBool("isIdle", false);
                         NPCAnim.SetBool("isPushing", false);

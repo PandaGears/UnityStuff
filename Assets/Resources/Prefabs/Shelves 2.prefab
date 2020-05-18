@@ -2283,7 +2283,6 @@ GameObject:
   - component: {fileID: 114223342524806192}
   - component: {fileID: 114817013232713706}
   - component: {fileID: 2812961941619246504}
-  - component: {fileID: 2003188495571615451}
   - component: {fileID: 6582713449667156145}
   - component: {fileID: -4619517030790756607}
   m_Layer: 0
@@ -2349,28 +2348,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.5341525, y: 2.3456154, z: 1}
   m_Center: {x: -0.9674413, y: 1.0758896, z: 0}
---- !u!114 &2003188495571615451
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1849993787917860}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8a7851381d448744bb21022200eb90e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GuiOn: 0
-  Text: for shelving your box stuffed cats... I know what I said
-  BoxSize:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 200
-    height: 100
-  customSkin: {fileID: 11400000, guid: 09e3d11f450a0dd44882e48b23f44245, type: 2}
-  Inputfield: {fileID: 0}
 --- !u!54 &6582713449667156145
 Rigidbody:
   m_ObjectHideFlags: 0

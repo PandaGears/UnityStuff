@@ -111,7 +111,6 @@ GameObject:
   - component: {fileID: 114971546707660726}
   - component: {fileID: 114652126614439868}
   - component: {fileID: 5948577910556466539}
-  - component: {fileID: 6062694948162304516}
   - component: {fileID: -3268132840653566829}
   - component: {fileID: -4839954757018458717}
   m_Layer: 0
@@ -180,28 +179,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.90905786, y: 0.65836835, z: 0.85815597}
   m_Center: {x: -0.31253517, y: 0.33255327, z: -0.30123228}
---- !u!114 &6062694948162304516
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1337003448471876}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8a7851381d448744bb21022200eb90e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GuiOn: 0
-  Text: This is another box... I stuffed a cat in this one...
-  BoxSize:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 200
-    height: 100
-  customSkin: {fileID: 11400000, guid: 09e3d11f450a0dd44882e48b23f44245, type: 2}
-  Inputfield: {fileID: 0}
 --- !u!54 &-3268132840653566829
 Rigidbody:
   m_ObjectHideFlags: 0

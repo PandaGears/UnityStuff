@@ -4011,7 +4011,6 @@ GameObject:
   - component: {fileID: 114077620494567176}
   - component: {fileID: 114484020319809522}
   - component: {fileID: 6350083359543785925}
-  - component: {fileID: 442286956018715441}
   - component: {fileID: -1299684023615983795}
   - component: {fileID: 6149585329967990070}
   m_Layer: 0
@@ -4076,29 +4075,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.2451458, y: 5.9897823, z: 7.278223}
   m_Center: {x: -0.62257314, y: 2.4948912, z: -3.1391115}
---- !u!114 &442286956018715441
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1501119365541646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8a7851381d448744bb21022200eb90e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GuiOn: 0
-  Text: And this... Is where I start to list the objects that I don't know from a
-    bar of soap what it is or does
-  BoxSize:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 200
-    height: 100
-  customSkin: {fileID: 11400000, guid: 09e3d11f450a0dd44882e48b23f44245, type: 2}
-  Inputfield: {fileID: 0}
 --- !u!54 &-1299684023615983795
 Rigidbody:
   m_ObjectHideFlags: 0

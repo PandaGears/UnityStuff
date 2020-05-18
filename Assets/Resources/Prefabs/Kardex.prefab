@@ -5754,7 +5754,6 @@ GameObject:
   - component: {fileID: 114918525221771252}
   - component: {fileID: 114882631881869382}
   - component: {fileID: 2458960082563914028}
-  - component: {fileID: 2400506667716055461}
   - component: {fileID: -1562429882414367557}
   - component: {fileID: 6907074424518009341}
   m_Layer: 0
@@ -5930,28 +5929,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.3555236, y: 6.2693844, z: 2.9149241}
   m_Center: {x: -1.6777618, y: 3.2239904, z: -0.9574621}
---- !u!114 &2400506667716055461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1461928532955684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8a7851381d448744bb21022200eb90e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GuiOn: 0
-  Text: What is that thing? Sounds like it delivers cards...
-  BoxSize:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 200
-    height: 100
-  customSkin: {fileID: 11400000, guid: 09e3d11f450a0dd44882e48b23f44245, type: 2}
-  Inputfield: {fileID: 0}
 --- !u!54 &-1562429882414367557
 Rigidbody:
   m_ObjectHideFlags: 0

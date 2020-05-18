@@ -957,7 +957,6 @@ GameObject:
   - component: {fileID: 114633391726257984}
   - component: {fileID: 114908791702063402}
   - component: {fileID: 4330835049271228890}
-  - component: {fileID: 131236063630216747}
   - component: {fileID: -4319277665779747420}
   - component: {fileID: 7994184827079291994}
   m_Layer: 0
@@ -1022,28 +1021,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.1202216, y: 0.57073784, z: 1.4137728}
   m_Center: {x: -0.44288993, y: 0.21463108, z: -0.5776521}
---- !u!114 &131236063630216747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1248929708510208}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8a7851381d448744bb21022200eb90e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GuiOn: 0
-  Text: where ya put stuff on and it does the balancing
-  BoxSize:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 200
-    height: 100
-  customSkin: {fileID: 11400000, guid: 09e3d11f450a0dd44882e48b23f44245, type: 2}
-  Inputfield: {fileID: 0}
 --- !u!54 &-4319277665779747420
 Rigidbody:
   m_ObjectHideFlags: 0

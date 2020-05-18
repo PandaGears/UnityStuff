@@ -12,63 +12,58 @@ public class CameraControls : MonoBehaviour {
     public GameObject firstPersonplayer;
 
     public void SetToFirstPerson(){
+
         firstPersonCam.enabled = true;
         firstPersonplayer.SetActive(true);
+
         thirdPersonCam.enabled = false;
         thirdPersonplayer.SetActive(false);
+
         birdPersonCam.enabled = false;
+
         NoPersonCam.enabled = false;
     }
 
     public void SetToThirdPerson(){
+
         firstPersonCam.enabled = false;
         firstPersonplayer.SetActive(false);
+
         thirdPersonCam.enabled = true;
         thirdPersonplayer.SetActive(true);
+
         birdPersonCam.enabled = false;
+
         NoPersonCam.enabled = false;
 
     }
 
     public void SetToBirdPerson() {
+
         firstPersonCam.enabled = false;
         firstPersonplayer.SetActive(false);
+
         thirdPersonCam.enabled = false;
         thirdPersonplayer.SetActive(false);
+
         birdPersonCam.enabled = true;
+
         NoPersonCam.enabled = false;
     }
         public void SetToNoPerson() {
         firstPersonCam.enabled = false;
         firstPersonplayer.SetActive(false);
+
         thirdPersonCam.enabled = false;
         thirdPersonplayer.SetActive(false);
+
         birdPersonCam.enabled = false;
+
         NoPersonCam.enabled = true;
     }
 
     private void Start()
     {
         SetToBirdPerson();
-    }
-
-    void ToggleView()
-    {
-        if (birdPersonCam.enabled = true && Input.GetKeyDown(KeyCode.V))
-        {
-            SetToFirstPerson();
-        }
-        else if (firstPersonCam.enabled = true && Input.GetKeyDown(KeyCode.V))
-        {
-            SetToThirdPerson();
-        }
-        else if (thirdPersonCam.enabled = true && Input.GetKeyDown(KeyCode.V))
-        {
-            SetToNoPerson();
-        }
-        else if (NoPersonCam.enabled = true && Input.GetKeyDown(KeyCode.V))
-        {
-            SetToBirdPerson();
-        }
     }
 }

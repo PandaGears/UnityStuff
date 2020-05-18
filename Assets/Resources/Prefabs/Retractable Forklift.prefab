@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 114096815089266956}
   - component: {fileID: 114710872383995132}
   - component: {fileID: 1631513358849331529}
-  - component: {fileID: 2519456384803525842}
   - component: {fileID: -7120579058357518832}
   - component: {fileID: 5860046060519555547}
   m_Layer: 0
@@ -78,28 +77,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.8027048, y: 2.3582373, z: 1.9935412}
   m_Center: {x: -0.9013524, y: 1.1803851, z: -0.49677074}
---- !u!114 &2519456384803525842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1174843455659598}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8a7851381d448744bb21022200eb90e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GuiOn: 0
-  Text: MOAR FORKLIFTS, DO THEY EVEN LIFT THINGS... THEY FORKING DO
-  BoxSize:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 200
-    height: 100
-  customSkin: {fileID: 11400000, guid: 09e3d11f450a0dd44882e48b23f44245, type: 2}
-  Inputfield: {fileID: 0}
 --- !u!54 &-7120579058357518832
 Rigidbody:
   m_ObjectHideFlags: 0

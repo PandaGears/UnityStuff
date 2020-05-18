@@ -2354,7 +2354,6 @@ GameObject:
   - component: {fileID: 114559200340861902}
   - component: {fileID: 114796379263279828}
   - component: {fileID: 3726890518305737660}
-  - component: {fileID: 7408297861991203353}
   - component: {fileID: -4731399506804035290}
   - component: {fileID: -8597267300802764231}
   m_Layer: 0
@@ -2419,28 +2418,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.77089953, y: 1.0901942, z: 1.7046824}
   m_Center: {x: -0.24876368, y: 0.56050897, z: -5.021836}
---- !u!114 &7408297861991203353
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1614905082401118}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8a7851381d448744bb21022200eb90e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GuiOn: 0
-  Text: It conveys boxes, not feelings
-  BoxSize:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 200
-    height: 100
-  customSkin: {fileID: 11400000, guid: 09e3d11f450a0dd44882e48b23f44245, type: 2}
-  Inputfield: {fileID: 0}
 --- !u!54 &-4731399506804035290
 Rigidbody:
   m_ObjectHideFlags: 0

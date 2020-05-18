@@ -1285,7 +1285,6 @@ GameObject:
   - component: {fileID: 114278556394939258}
   - component: {fileID: 114231933031094074}
   - component: {fileID: 4643989044439855482}
-  - component: {fileID: 3632819450326234418}
   - component: {fileID: -1115513021359174297}
   - component: {fileID: -985417385838414499}
   m_Layer: 0
@@ -1350,28 +1349,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.3916502, y: 2.1125488, z: 1.7097113}
   m_Center: {x: -0.3976375, y: 1.0628576, z: -0.48862195}
---- !u!114 &3632819450326234418
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1877470617239794}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8a7851381d448744bb21022200eb90e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GuiOn: 0
-  Text: Please do not wrestle in this... Unless you are part of the JackAss cast
-  BoxSize:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 200
-    height: 100
-  customSkin: {fileID: 11400000, guid: 09e3d11f450a0dd44882e48b23f44245, type: 2}
-  Inputfield: {fileID: 0}
 --- !u!54 &-1115513021359174297
 Rigidbody:
   m_ObjectHideFlags: 0

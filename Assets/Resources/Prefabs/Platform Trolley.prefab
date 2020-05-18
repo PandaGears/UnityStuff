@@ -437,7 +437,6 @@ GameObject:
   - component: {fileID: 114737235607511008}
   - component: {fileID: 114102856453732624}
   - component: {fileID: 2055910386559325731}
-  - component: {fileID: 1863896118085310537}
   - component: {fileID: -6027369832683298924}
   - component: {fileID: -5625789361881855191}
   m_Layer: 0
@@ -502,28 +501,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.4254936, y: 1.108643, z: 0.8087078}
   m_Center: {x: -0.56466013, y: 0.5326617, z: -0.2597334}
---- !u!114 &1863896118085310537
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1315548483789192}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8a7851381d448744bb21022200eb90e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GuiOn: 0
-  Text: Where you place your Cat stuffed boxes and wheel em around
-  BoxSize:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 200
-    height: 100
-  customSkin: {fileID: 11400000, guid: 09e3d11f450a0dd44882e48b23f44245, type: 2}
-  Inputfield: {fileID: 0}
 --- !u!54 &-6027369832683298924
 Rigidbody:
   m_ObjectHideFlags: 0

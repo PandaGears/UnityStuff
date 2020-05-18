@@ -148,7 +148,6 @@ GameObject:
   - component: {fileID: 114463551502111500}
   - component: {fileID: 114400949231006390}
   - component: {fileID: 7666284732823607482}
-  - component: {fileID: 3462390906023409920}
   - component: {fileID: -1101644741568290063}
   - component: {fileID: -7420872137759416080}
   - component: {fileID: 2500603480710925834}
@@ -216,29 +215,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.3875674, y: 1.5993786, z: 2.2502756}
   m_Center: {x: -0.20959574, y: 0.76498795, z: -0.99223256}
---- !u!114 &3462390906023409920
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1798912032739730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8a7851381d448744bb21022200eb90e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GuiOn: 0
-  Text: Copies your photo's, incase you wanna burn the original evidence but make
-    backups
-  BoxSize:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 200
-    height: 100
-  customSkin: {fileID: 11400000, guid: 09e3d11f450a0dd44882e48b23f44245, type: 2}
-  Inputfield: {fileID: 0}
 --- !u!54 &-1101644741568290063
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -43,7 +43,6 @@ GameObject:
   - component: {fileID: 114745216697499818}
   - component: {fileID: 114872003072546832}
   - component: {fileID: 6589361782221581773}
-  - component: {fileID: 1568261376111583913}
   - component: {fileID: -7005372083055308563}
   - component: {fileID: 7899057232049896412}
   m_Layer: 0
@@ -108,28 +107,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.45156318, y: 0.52904296, z: 0.45224917}
   m_Center: {x: -0.12391475, y: 0.23547852, z: -0.15387613}
---- !u!114 &1568261376111583913
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1564554143529892}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8a7851381d448744bb21022200eb90e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GuiOn: 0
-  Text: Where you print out your dodgy evidence if you don't have the photocopier
-  BoxSize:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 200
-    height: 100
-  customSkin: {fileID: 11400000, guid: 09e3d11f450a0dd44882e48b23f44245, type: 2}
-  Inputfield: {fileID: 0}
 --- !u!54 &-7005372083055308563
 Rigidbody:
   m_ObjectHideFlags: 0

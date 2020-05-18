@@ -6347,7 +6347,6 @@ GameObject:
   - component: {fileID: 8604019752588806664}
   - component: {fileID: 8604527646159271716}
   - component: {fileID: 3794979118917177339}
-  - component: {fileID: 7098459409832019392}
   - component: {fileID: 7271229340667004258}
   - component: {fileID: 2929425319978868673}
   m_Layer: 0
@@ -6430,28 +6429,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0867217, y: 0.63350964, z: 1.5158453}
   m_Center: {x: -0.3908633, y: 0.288054, z: -0.6184573}
---- !u!114 &7098459409832019392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8573322496070043396}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8a7851381d448744bb21022200eb90e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GuiOn: 0
-  Text: WHY ARE THERE CATS IN THESE BOXES, DEV IS A PSYCHOPATH
-  BoxSize:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 200
-    height: 100
-  customSkin: {fileID: 11400000, guid: 09e3d11f450a0dd44882e48b23f44245, type: 2}
-  Inputfield: {fileID: 0}
 --- !u!54 &7271229340667004258
 Rigidbody:
   m_ObjectHideFlags: 0

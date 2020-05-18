@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 114164955749852226}
   - component: {fileID: 114275882114506206}
   - component: {fileID: 3983990939081843961}
-  - component: {fileID: 8168064614508875909}
   - component: {fileID: 1985492489181690787}
   - component: {fileID: 1497451786380133}
   m_Layer: 0
@@ -77,28 +76,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.6308524, y: 0.4841361, z: 0.876457}
   m_Center: {x: -0.20970133, y: 0.25793195, z: -0.32536972}
---- !u!114 &8168064614508875909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1289752348254992}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8a7851381d448744bb21022200eb90e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GuiOn: 0
-  Text: you put stuff IN it, like cat stuffed boxes
-  BoxSize:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 200
-    height: 100
-  customSkin: {fileID: 11400000, guid: 09e3d11f450a0dd44882e48b23f44245, type: 2}
-  Inputfield: {fileID: 0}
 --- !u!54 &1985492489181690787
 Rigidbody:
   m_ObjectHideFlags: 0
