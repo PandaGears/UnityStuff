@@ -7814,6 +7814,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -4169881275686221682, guid: a6f5c0c912fc14d6fb217df63b1afc15, type: 3}
+    - {fileID: -5800219965500813371, guid: a6f5c0c912fc14d6fb217df63b1afc15, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a6f5c0c912fc14d6fb217df63b1afc15, type: 3}
 --- !u!1001 &1028817489
 PrefabInstance:
@@ -9403,7 +9404,8 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: -0.38803953
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7899057232049896412, guid: 7857fc2e7c9ae45fdb3be9311ff9fbee, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7857fc2e7c9ae45fdb3be9311ff9fbee, type: 3}
 --- !u!4 &1228060069 stripped
 Transform:
@@ -12927,7 +12929,8 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3935744441070512602, guid: 832ffb35173874ab8b5c759c89823d06, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 832ffb35173874ab8b5c759c89823d06, type: 3}
 --- !u!1 &1818734651
 GameObject:
@@ -14371,6 +14374,7 @@ PrefabInstance:
     - {fileID: 633499291433938236, guid: 251e74bc6145347d38eeafce62f28fa5, type: 3}
     - {fileID: 5934858613057192822, guid: 251e74bc6145347d38eeafce62f28fa5, type: 3}
     - {fileID: 7666284732823607482, guid: 251e74bc6145347d38eeafce62f28fa5, type: 3}
+    - {fileID: -7420872137759416080, guid: 251e74bc6145347d38eeafce62f28fa5, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 251e74bc6145347d38eeafce62f28fa5, type: 3}
 --- !u!1 &2006774970
 GameObject:
@@ -17719,7 +17723,6 @@ GameObject:
   - component: {fileID: 5134051794068618520}
   - component: {fileID: 1637630212525032533}
   - component: {fileID: 1557543495414839294}
-  - component: {fileID: 8862152970691003470}
   m_Layer: 0
   m_Name: Packaging Table
   m_TagString: Object
@@ -17746,7 +17749,6 @@ GameObject:
   - component: {fileID: 114949437379211540}
   - component: {fileID: 5094029281727531700}
   - component: {fileID: 4188536271002872585}
-  - component: {fileID: 2780671362562873232}
   m_Layer: 0
   m_Name: L-Shaped Desk
   m_TagString: Object
@@ -23503,22 +23505,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f445edb9a22a5247ae3817434d9569d, type: 3}
---- !u!114 &2780671362562873232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1902557312018838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e74f1a2110701140bb6951e8d250fe0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  data:
-    name: 
-    pos: {x: 0, y: 0, z: 0}
-  names: L-Shaped Desk
 --- !u!114 &4188536271002872585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24001,23 +23987,8 @@ PrefabInstance:
     - {fileID: 3621169344113960775, guid: f711648c0d8d3fe48a506c20db03f936, type: 3}
     - {fileID: 3670394223246777774, guid: f711648c0d8d3fe48a506c20db03f936, type: 3}
     - {fileID: 7271229340667004258, guid: f711648c0d8d3fe48a506c20db03f936, type: 3}
+    - {fileID: 2929425319978868673, guid: f711648c0d8d3fe48a506c20db03f936, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f711648c0d8d3fe48a506c20db03f936, type: 3}
---- !u!114 &8862152970691003470
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1897070273900177}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e74f1a2110701140bb6951e8d250fe0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  data:
-    name: 
-    pos: {x: 0, y: 0, z: 0}
-  names: Packaging Table
 --- !u!54 &8949613025184853022
 Rigidbody:
   m_ObjectHideFlags: 0
